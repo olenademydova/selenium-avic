@@ -9,7 +9,6 @@ import static org.openqa.selenium.By.id;
 import static org.openqa.selenium.By.xpath;
 
 public class CartPage extends BasePage {
-
     private static final String REMOVE_FROM_CART_BUTTON = "//div[@class='item']/i[contains(@class,'js-btn-close')]";
     private static final String CART_TEXT_MESSAGE = "//div[@data-cart-name='modal']//p[@class='text-center']";
 

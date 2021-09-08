@@ -7,7 +7,6 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class SearchTests extends BaseTest {
-
     private static final String SEARCH_KEYWORD = "iPhone 11";
     private static final String EXPECTED_SEARCH_QUERY = "query=iPhone";
 

@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import static org.openqa.selenium.By.xpath;
 
 public class LoginPage extends BasePage {
-
     public static final String LOGIN = "//div[@class='sign-holder clearfix']//input[@name='login']";
     public static final String PASSWORD = "//input[@type='password']";
     public static final String LOGIN_BUTTON = "//div[@class='sign-holder clearfix']//button[@type='submit']";
@@ -24,5 +23,4 @@ public class LoginPage extends BasePage {
     public String getPopupMessageText() {
         return driver.findElement(xpath(POPUP_MESSAGE)).getText();
     }
-
 }

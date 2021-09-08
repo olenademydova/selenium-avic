@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class AddToCartTests extends BaseTest {
-
     private static final String EXPECTED_AMOUNT_OF_PRODUCTS_IN_CART = "1";
 
     @Test
@@ -19,7 +18,6 @@ public class AddToCartTests extends BaseTest {
         getIphonePage().clickOnContinueShoppingButton();
         Thread.sleep(1000);
         assertEquals(getHomePage().getTextOfAmountProductsInCart(), EXPECTED_AMOUNT_OF_PRODUCTS_IN_CART);
-
     }
 
     @Test

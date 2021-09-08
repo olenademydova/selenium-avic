@@ -10,7 +10,6 @@ import static org.openqa.selenium.By.xpath;
 
 
 public class HomePage extends BasePage {
-
     private static final String SEARCH_INPUT = "//input[@id='input_search']";
     private static final String PRODUCT_CATALOGUE_BUTTON = "//span[@class='sidebar-item']";
     private static final String APPLE_STORE_BUTTON = "//a[@class='sidebar-item']//span[text()='Apple Store']";
@@ -23,7 +22,6 @@ public class HomePage extends BasePage {
     private static final String CONTACTS_DROPDOWN = "//div[@class='header-top__item js-cont-btn']";
     private static final String CHANGE_CITY_BUTTON = "//ul[@class='tab-navigation tab-contact flex-wrap']//a[@href='#tab1']";
     private static final String KYIV_ADDRESS = "//*[@id='tab101']//p[3]";
-
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -76,5 +74,4 @@ public class HomePage extends BasePage {
     public String getKyivAddressText(){
         return driver.findElement(xpath(KYIV_ADDRESS)).getAttribute("textContent");
     }
-
 }

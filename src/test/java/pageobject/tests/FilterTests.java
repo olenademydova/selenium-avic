@@ -8,7 +8,6 @@ import static org.testng.Assert.assertTrue;
 public class FilterTests extends BaseTest {
     private static final String SERIES_KEYWORD = "MacBook 12";
 
-
     @Test
     public void verifyFilteringBySeries(){
         getHomePage().clickOnProductCatalogueButton();
@@ -21,5 +20,4 @@ public class FilterTests extends BaseTest {
             assertTrue(webElement.getText().contains(SERIES_KEYWORD));
         }
     }
-
 }

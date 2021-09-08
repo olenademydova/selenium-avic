@@ -7,7 +7,6 @@ import static org.openqa.selenium.By.id;
 import static org.openqa.selenium.By.xpath;
 
 public class IphonePage extends BasePage {
-
     private static final String ADD_TO_CART_BUTTON = "//a[@class='prod-cart__buy']";
     private static final String CONTINUE_TO_SHOPPING_BUTTON = "//div[@class='btns-cart-holder']//a[contains(@class,'btn--orange')]";
 
@@ -22,5 +21,4 @@ public class IphonePage extends BasePage {
     public void clickOnContinueShoppingButton() {
         driver.findElement(xpath(CONTINUE_TO_SHOPPING_BUTTON)).click();
     }
-
 }

@@ -5,8 +5,6 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.*;
 
 public class AddressTest extends BaseTest{
-
-
     @Test
     public void checkAddressForCity() {
         getHomePage().changeCity();

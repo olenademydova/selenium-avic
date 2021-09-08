@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import static org.openqa.selenium.By.*;
 
 public class AppleStorePage extends BasePage {
-
     private static final String IPHONE_BUTTON = "//div[@class='brand-box__info']//a[text()='iPhone']";
     private static final String MACBOOK_BUTTON = "//div[@class='brand-box__info']//a[text()='MacBook']";
     private static final String FILTER_BY_SERIES_CHECKBOX = "//a[text()='%s']/ancestor::label/a";
