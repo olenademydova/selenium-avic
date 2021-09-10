@@ -20,7 +20,7 @@ public class SearchTests extends BaseTest {
     public void checkElementsAmountOnSearchPage() {
         getHomePage().searchByKeyword(SEARCH_KEYWORD);
         getHomePage().implicitWait(30);
-        assertEquals(getSearchResultPage().getSearchResultCount(), 12);
+        assertTrue(getSearchResultPage().getSearchResultCount() > 0);
     }
 
     @Test

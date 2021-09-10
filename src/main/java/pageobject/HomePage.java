@@ -5,12 +5,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 
-import static org.openqa.selenium.By.id;
-import static org.openqa.selenium.By.xpath;
+import static org.openqa.selenium.By.*;
 
 
 public class HomePage extends BasePage {
     private static final String SEARCH_INPUT = "//input[@id='input_search']";
+    private static final String SEARCH_BUTTON = ".search-btn";
     private static final String PRODUCT_CATALOGUE_BUTTON = "//span[@class='sidebar-item']";
     private static final String APPLE_STORE_BUTTON = "//a[@class='sidebar-item']//span[text()='Apple Store']";
     private static final String AMOUNT_OF_PRODUCTS_IN_CART = "//div[contains(@class,'header-bottom__cart')]//div[contains(@class,'cart_count')]";
@@ -28,7 +28,8 @@ public class HomePage extends BasePage {
     }
 
     public void searchByKeyword(final String keyword) {
-        driver.findElement(xpath(SEARCH_INPUT)).sendKeys(keyword, Keys.ENTER);
+        driver.findElement(xpath(SEARCH_INPUT)).sendKeys(keyword);
+        driver.findElement(cssSelector(SEARCH_BUTTON)).click();
     }
 
     public void clickOnProductCatalogueButton() {
